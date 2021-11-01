@@ -1,1 +1,1 @@
-# mentorship-program
+# Internship Preparation Mentorship Program
