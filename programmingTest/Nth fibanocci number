@@ -1,0 +1,24 @@
+#include <iostream>
+#include <stack>
+using namespace std;
+int main(){
+    long long int n;
+    cin >> n;
+    if(n<=1){
+        cout<<"0";
+    }else{
+    stack<long long int> s;
+    s.push(0);
+    s.push(1);
+    long long int sum=0;
+    for(long long int i=1;i<n-1;i++){
+        long long int top=s.top();
+        s.pop();
+        sum=top+s.top();
+        s.pop();
+        s.push(top);
+        s.push(sum);
+    }
+    cout<<sum;
+    }
+}
