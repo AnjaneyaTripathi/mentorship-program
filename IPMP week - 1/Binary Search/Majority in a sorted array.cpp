@@ -8,7 +8,7 @@ bool Majority(int arr[],int n,int key)
     while(l<=r)
     {
         int mid = l + (r - l)/2;
-        if(arr[mid]==key)
+        if(arr[mid]==key && (mid==0 || key>arr[mid-1]))
         {
             ind = mid;
             break;
