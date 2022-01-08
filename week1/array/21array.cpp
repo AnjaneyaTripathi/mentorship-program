@@ -25,6 +25,6 @@ int main()
             count = 1;
         }
     }
-    if (count == 1)
+    if (count == 0)
         cout << "There is no such point in the array where left-sum==right-sum" << endl;
 }

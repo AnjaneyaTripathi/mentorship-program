@@ -23,11 +23,10 @@ void duplicateAlgo(int arr[], int size)
 {
     for (int i = 0; i < size; i++)
     {
-        if (arr[i] >= 0)
-        {
-
-            arr[arr[i]] += size;
-        }
+    
+        
+            arr[arr[i]%size] += size;
+        
     }
     traverse(arr, size);
 }
