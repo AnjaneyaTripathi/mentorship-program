@@ -103,4 +103,4 @@ int main()
     }
 }
 
-// here answer will be no intersection because both the lists are always created separetely, but we can check it for data as well
+// here answer will be no intersection because both the lists are always created separetely
